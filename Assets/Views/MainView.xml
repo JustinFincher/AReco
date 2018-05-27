@@ -1,0 +1,51 @@
+<MainView>
+  <Region Width="100%"
+          Height="16%"
+          Alignment="Top"
+          Margin="0,0,0,0"
+          Id="DebugBar">
+    <BlurView
+              BackgroundImageType="Sliced"
+              BackgroundBlurSpriteBlending="0.817" BackgroundBlurVibrancy="3" BackgroundBlurBrightness="0.02" BackgroundColor="0.0,0.0,0.0">
+      <Group Spacing="5">
+        <Label Id="MLMainResultLabel"  FontSize="20" Height="30" Width="100%"
+               Text="Main Result" TextAlignment="Center" Alignment="Center"
+               VerticalOverflow="Overflow" HorizontalOverflow="Wrap"></Label>
+        <Label Id="RaycastResultLabel"  FontSize="20" Height="30" Width="100%"
+               Text="Main Result" TextAlignment="Center" Alignment="Center"
+               VerticalOverflow="Overflow" HorizontalOverflow="Wrap"></Label>
+        <Label Id="MLResultLabel"  FontSize="20" Height="70" Width="100%"
+               Text="Main Result" TextAlignment="Center" Alignment="Center"
+               VerticalOverflow="Overflow" HorizontalOverflow="Wrap"></Label>
+      </Group>
+    </BlurView>
+  </Region>
+  
+  <Region Width="900"
+          Height="12%"
+          Alignment="Bottom"
+          Margin="0,0,0,5%"
+          Id="BottomBar">
+    <BlurView BackgroundImage="Assets/FinGameWorks/Textures/UI/background.round.256.24.png"
+              BackgroundImageType="Sliced"
+              Margin="0,0,0,0"
+              BackgroundBlurSpriteBlending="0.817" BackgroundBlurVibrancy="3" BackgroundBlurBrightness="0.02" BackgroundColor="0.0,0.0,0.0">
+      <Group Spacing="10">
+        <Group Spacing="10" Margin="10,10,10,10" Orientation="Horizontal">
+          <Frame Width="700">
+
+            <Label Width="100%" Text="ARecognize" FontSize="28" TextAlignment="Center" Alignment="Center">
+
+            </Label>
+
+
+          </Frame>
+          <Button BackgroundColor="#FFFFFF" Width="60" BackgroundImage="Assets/FinGameWorks/Textures/UI/icon.settings.png" BackgroundImagePreserveAspect="true" Text="" Click="ClearAll"></Button>
+        </Group>
+        <Slider Width="100%">
+
+        </Slider>
+      </Group>
+    </BlurView>
+  </Region>
+</MainView>
